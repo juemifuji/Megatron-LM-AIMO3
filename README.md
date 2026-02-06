@@ -11,7 +11,7 @@ To get started quickly, we strongly recommend using the NVIDIA [Docker](nvcr.io/
 > sh convert_gpt_oss.sh $i
 > ```
 >
-> where `$i` denotes the node index. Since the conversion requires eight A800 nodes, `$i` should range from **0 to 7**.
+> where `$i` denotes the node index. Since the conversion requires 8 * A800 nodes, `$i` should range from **0 to 7**.
 >
 > After the conversion is completed, launch training with:
 >
