@@ -2,7 +2,7 @@
 Our codebase is derived from [Megatron-LM](https://github.com/NVIDIA/Megatron-LM). The key difference from the original repository is that we modified `megatron/post_training/model_builder.py` by forcing `use_arbitrary_attention_mask = False`. This change enables fused attention when training GPT-OSS-120B, allowing us to support a 64K context length without enabling Context Parallelism (CP). The training was conducted on a cluster of 64 NVIDIA A800 GPUs.
 
 ## Quick Start
-To get started quickly, we strongly recommend using the NVIDIA Docker environment nvcr.io/nvidia/pytorch:25.12-py3, which eliminates the need for additional software installation.
+To get started quickly, we strongly recommend using the NVIDIA Docker environment **nvcr.io/nvidia/pytorch:25.12-py3**, which eliminates the need for additional software installation.
 
 ## SFT
 > To train GPT-OSS-120B, the model must first be converted into the Megatron format. Navigate to `examples/post_training/modelopt/` and execute:
